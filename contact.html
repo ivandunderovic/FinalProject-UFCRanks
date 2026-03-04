@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - UFC Rankings</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+                <h1>UFC RANKS</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="rankings.html">Rang liste</a></li>
+                    <li><a href="contact.html" class="active">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h2>Kontaktirajte nas</h2>
+                <p>Imate pitanja ili sugestije? Slobodno nam se javite!</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-form-wrapper">
+                        <h3>Pošaljite nam poruku</h3>
+                        <form id="contactForm" novalidate="contact-form">
+                            <div class="form-group">
+                                <label for="name">Ime i prezime *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email adresa *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Predmet *</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <span class="error-message" id="subjectError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Poruka *</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <button type="submit" class="submit-button">Pošalji poruku</button>
+                        </form>
+                        <div id="formSuccess" class="success-message"></div>
+                    </div>
+
+                    <div class="contact-info">
+                        <h3>Informacije</h3>
+                        <div class="info-item">
+                            <h4>Adresa</h4>
+                            <p>Sveučilište J.J. Strossmayera<br>Osijek, Hrvatska</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>Email</h4>
+                            <p>info@ufc-rankings.hr</p>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>UFC Rankings - Projektni zadatak</p>
+            <p>Izrađeno za potrebe kolegija Osnove razvoja Web i mobilnih aplikacija</p>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Na vrh">↑</button>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/form-validation.js"></script>
+</body>
+</html>

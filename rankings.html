@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rang liste - UFC Rankings</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>UFC RANKS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="rankings.html">Rang liste</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2>Rang liste</h2>
+                <p>Kliknite na borca za prikaz više informacija.</p>
+            </div> 
+        </section>
+
+        <section class="rankings-section">
+            <div class="container">
+                <!--HEAVYWEIGHT-->
+                <div class="category-section">
+                    <h2>Heavyweight (do 120.2 kg)</h2>
+                    
+                    <div class="rankings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Ime</th>
+                                <th>Rekord</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Rang">C</td>
+                                <td data-label="Ime">Tom Aspinall</td>
+                                <td data-label="Rekord">15-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('aspinall')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">1</td>
+                                <td data-label="Ime">Ciryl Gane</td>
+                                <td data-label="Rekord">13-2-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('gane')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">2</td>
+                                <td data-label="Ime">Alexandar Volkov</td>
+                                <td data-label="Rekord">39-11-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('volkov')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">3</td>
+                                <td data-label="Ime">Sergei Pavlovich</td>
+                                <td data-label="Rekord">20-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('pavlovich')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">4</td>
+                                <td data-label="Ime">Curtis Blaydes</td>
+                                <td data-label="Rekord">19-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('blaydes')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">5</td>
+                                <td data-label="Ime">Waldo Cortes Acosta</td>
+                                <td data-label="Rekord">16-2-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('acosta')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">6</td>
+                                <td data-label="Ime">Jailton Almeida</td>
+                                <td data-label="Rekord">22-4-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('almeida')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">7</td>
+                                <td data-label="Ime">Serghei Spivac</td>
+                                <td data-label="Rekord">17-6-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('spivac')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">8</td>
+                                <td data-label="Ime">Derrick Lewis</td>
+                                <td data-label="Rekord">29-12-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('lewis')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">9</td>
+                                <td data-label="Ime">Ante Delija</td>
+                                <td data-label="Rekord">26-7-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('delija')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">10</td>
+                                <td data-label="Ime">Marcin Tybura</td>
+                                <td data-label="Rekord">27-10-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('tybura')">Prikaži</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <!--LIGHT HEAVYWEIGHT-->
+                <div class="category-section">
+                    <h2>Light Heavyweight (do 93 kg)</h2>
+                    
+                    <div class="rankings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Ime</th>
+                                <th>Rekord</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Rang">C</td>
+                                <td data-label="Ime">Alex Pereira</td>
+                                <td data-label="Rekord">13-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('pereira')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">1</td>
+                                <td data-label="Ime">Jiri Prochazka</td>
+                                <td data-label="Rekord">32-5-1</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('prochazka')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">2</td>
+                                <td data-label="Ime">Magomed Ankalaev</td>
+                                <td data-label="Rekord">21-2-1</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('ankalaev')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">3</td>
+                                <td data-label="Ime">Carlos Ulberg</td>
+                                <td data-label="Rekord">14-1-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('ulberg')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">4</td>
+                                <td data-label="Ime">Khalil Rountree Jr.</td>
+                                <td data-label="Rekord">15-7-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('rountree')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">5</td>
+                                <td data-label="Ime">Jan Blachowicz</td>
+                                <td data-label="Rekord">29-11-2</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('Blachowicz')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">6</td>
+                                <td data-label="Ime">Azamat Murzakanov</td>
+                                <td data-label="Rekord">16-0-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('murzakanov')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">7</td>
+                                <td data-label="Ime">Jamahal Hill</td>
+                                <td data-label="Rekord">12-4-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('hill')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">8</td>
+                                <td data-label="Ime">Volkan Oezdemir</td>
+                                <td data-label="Rekord">21-8-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('oezdemir')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">9</td>
+                                <td data-label="Ime">Dominick Reyes</td>
+                                <td data-label="Rekord">15-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('reyes')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">10</td>
+                                <td data-label="Ime">Bogdan Guskov</td>
+                                <td data-label="Rekord">18-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('guskov')">Prikaži</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--MIDDLEWEIGHT-->
+                <div class="category-section">
+                    <h2>Middleweight (do 83.9 kg)</h2>
+                    
+                    <div class="rankings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Ime</th>
+                                <th>Rekord</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Rang">C</td>
+                                <td data-label="Ime">Khamzat Chimaev</td>
+                                <td data-label="Rekord">15-0-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('chimaev')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">1</td>
+                                <td data-label="Ime">Dricus Du Plessis</td>
+                                <td data-label="Rekord">23-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('du plessis')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">2</td>
+                                <td data-label="Ime">Nassourdine Imavov</td>
+                                <td data-label="Rekord">17-4-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('imavov')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">3</td>
+                                <td data-label="Ime">Sean Strickland</td>
+                                <td data-label="Rekord">29-7-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('strickland')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">4</td>
+                                <td data-label="Ime">Anthony Hernandez</td>
+                                <td data-label="Rekord">15-2-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('hernandez')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">5</td>
+                                <td data-label="Ime">Brendan Allen</td>
+                                <td data-label="Rekord">26-7-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('allen')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">6</td>
+                                <td data-label="Ime">Israel Adesanya</td>
+                                <td data-label="Rekord">24-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('adesanya')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">7</td>
+                                <td data-label="Ime">Caio Borralho</td>
+                                <td data-label="Rekord">17-2-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('borralho')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">8</td>
+                                <td data-label="Ime">Reiner De Ridder</td>
+                                <td data-label="Rekord">21-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('de ridder')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">9</td>
+                                <td data-label="Ime">Robert Whittaker</td>
+                                <td data-label="Rekord">27-9-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('whittaker')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">10</td>
+                                <td data-label="Ime">Michael Page</td>
+                                <td data-label="Rekord">24-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('page')">Prikaži</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!--WELTERYWEIGHT-->
+                <div class="category-section">
+                    <h2>Welterweight (do 77.1 kg)</h2>
+                    
+                    <div class="rankings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Ime</th>
+                                <th>Rekord</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Rang">C</td>
+                                <td data-label="Ime">Islam Makhachev</td>
+                                <td data-label="Rekord">28-1-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('makhachev')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">1</td>
+                                <td data-label="Ime">Jack Della Maddalena</td>
+                                <td data-label="Rekord">18-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('maddalena')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">2</td>
+                                <td data-label="Ime">Shavkat Rakhmonov</td>
+                                <td data-label="Rekord">19-0-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('rakhmonov')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">3</td>
+                                <td data-label="Ime">Ian Machado Garry</td>
+                                <td data-label="Rekord">17-1-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('garry')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">4</td>
+                                <td data-label="Ime">Michael Morales</td>
+                                <td data-label="Rekord">19-0-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('morales')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">5</td>
+                                <td data-label="Ime">Belal Muhammad</td>
+                                <td data-label="Rekord">24-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('muhammad')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">6</td>
+                                <td data-label="Ime">Carlos Prates</td>
+                                <td data-label="Rekord">23-7-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('prates')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">7</td>
+                                <td data-label="Ime">Sean Brady</td>
+                                <td data-label="Rekord">18-2-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('brady')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">8</td>
+                                <td data-label="Ime">Kamaru Usman</td>
+                                <td data-label="Rekord">21-4-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('usman')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">9</td>
+                                <td data-label="Ime">Leon Edwards</td>
+                                <td data-label="Rekord">22-6-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('edwards')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">10</td>
+                                <td data-label="Ime">Joaquin Buckley</td>
+                                <td data-label="Rekord">21-7-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('buckley')">Prikaži</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- LIGHTWEIGHT KATEGORIJA -->
+                <div class="category-section">
+                    <h2>Lightweight (70.3 kg)</h2>
+                    
+                    <div class="rankings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Ime</th>
+                                <th>Rekord</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Rang">C</td>
+                                <td data-label="Ime">Ilia Topuria</td>
+                                <td data-label="Rekord">17-0-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('topuria')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">1</td>
+                                <td data-label="Ime">Arman Tsarukyan</td>
+                                <td data-label="Rekord">23-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('tsarukyan')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">2</td>
+                                <td data-label="Ime">Charles Oliveira</td>
+                                <td data-label="Rekord">36-11-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('oliveira')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">3</td>
+                                <td data-label="Ime">Max Holloway</td>
+                                <td data-label="Rekord">27-8-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('holloway')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">4</td>
+                                <td data-label="Ime">Justin Gaethje</td>
+                                <td data-label="Rekord">27-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('gaethje')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">5</td>
+                                <td data-label="Ime">Paddy Pimblett</td>
+                                <td data-label="Rekord">23-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('pimblett')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">6</td>
+                                <td data-label="Ime">Dan Hooker</td>
+                                <td data-label="Rekord">24-13-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('hooker')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">7</td>
+                                <td data-label="Ime">Mateusz Gamrot</td>
+                                <td data-label="Rekord">25-4-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('gamrot')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">8</td>
+                                <td data-label="Ime">Benoit Saint Denis</td>
+                                <td data-label="Rekord">16-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('denis')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">9</td>
+                                <td data-label="Ime">Rafael Fiziev</td>
+                                <td data-label="Rekord">13-4-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('fiziev')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">10</td>
+                                <td data-label="Ime">Renato Moicano</td>
+                                <td data-label="Rekord">20-7-1</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('moicano')">Prikaži</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+
+                <!-- FEATHERWEIGHT KATEGORIJA -->
+                <div class="category-section">
+                    <h2>Featherweight (65.8 kg)</h2>
+                    
+                    <div class="rankings-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rang</th>
+                                <th>Ime</th>
+                                <th>Rekord</th>
+                                <th>Info</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Rang">C</td>
+                                <td data-label="Ime">Alexander Volkanovski</td>
+                                <td data-label="Rekord">27-4-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('volkanovski')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">1</td>
+                                <td data-label="Ime">Movsar Evloev</td>
+                                <td data-label="Rekord">19-0-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('evloev')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">2</td>
+                                <td data-label="Ime">Diego Lopes</td>
+                                <td data-label="Rekord">27-7-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('lopes')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">3</td>
+                                <td data-label="Ime">Yair Rodriguez</td>
+                                <td data-label="Rekord">21-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('rodriguez')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">4</td>
+                                <td data-label="Ime">Lerone Murphy</td>
+                                <td data-label="Rekord">17-0-1</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('murphy')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">5</td>
+                                <td data-label="Ime">Aljamain Sterling</td>
+                                <td data-label="Rekord">25-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('sterling')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">6</td>
+                                <td data-label="Ime">Arnold Allen</td>
+                                <td data-label="Rekord">20-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('allen')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">7</td>
+                                <td data-label="Ime">Youssef Zalal</td>
+                                <td data-label="Rekord">18-5-1</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('zalal')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">8</td>
+                                <td data-label="Ime">Steve Garcia</td>
+                                <td data-label="Rekord">19-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('garcia')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">9</td>
+                                <td data-label="Ime">Brian Ortega</td>
+                                <td data-label="Rekord">16-5-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('ortega')">Prikaži</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Rang">10</td>
+                                <td data-label="Ime">Jean Silva</td>
+                                <td data-label="Rekord">16-3-0</td>
+                                <td data-label="Info">
+                                    <button class="view-fighter" onclick="showFighter('silva')">Prikaži</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+
+                <!-- BANTAMWEIGHT KATEGORIJA -->
+                <div class="category-section">
+                    <h2>Bantamweight (61.2 kg)</h2>
+                    
+                    <div class="rankings-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rang</th>
+                                    <th>Ime</th>
+                                    <th>Rekord</th>
+                                    <th>Info</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Rang">C</td>
+                                    <td data-label="Ime">Petr Yan</td>
+                                    <td data-label="Rekord">20-5-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('yan')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">1</td>
+                                    <td data-label="Ime">Merab Dvalishvili</td>
+                                    <td data-label="Rekord">21-5-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('dvalishvili')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">2</td>
+                                    <td data-label="Ime">Umar Nurmagomedov</td>
+                                    <td data-label="Rekord">19-1-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('unurmagomedov')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">3</td>
+                                    <td data-label="Ime">Sean O'Malley</td>
+                                    <td data-label="Rekord">18-3-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('omalley')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">4</td>
+                                    <td data-label="Ime">Cory Sandhagen</td>
+                                    <td data-label="Rekord">18-6-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('sandhagen')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">5</td>
+                                    <td data-label="Ime">Song Yadong</td>
+                                    <td data-label="Rekord">22-8-1</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('yadong')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">6</td>
+                                    <td data-label="Ime">Deiveson Figueiredo</td>
+                                    <td data-label="Rekord">25-5-1</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('figueiredo')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">7</td>
+                                    <td data-label="Ime">Aiemann Zahabi</td>
+                                    <td data-label="Rekord">14-2-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('zahabi')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">8</td>
+                                    <td data-label="Ime">Marlon Vera</td>
+                                    <td data-label="Rekord">23-11-1</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('vera')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">9</td>
+                                    <td data-label="Ime">Mario Bautista</td>
+                                    <td data-label="Rekord">16-3-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('bautista')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">10</td>
+                                    <td data-label="Ime">David Martinez</td>
+                                    <td data-label="Rekord">13-1-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('martinez')">Prikaži</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- FLYWEIGHT KATEGORIJA -->
+                <div class="category-section">
+                    <h2>Flyweight (56.7 kg)</h2>
+                    
+                    <div class="rankings-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rang</th>
+                                    <th>Ime</th>
+                                    <th>Rekord</th>
+                                    <th>Info</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Rang">C</td>
+                                    <td data-label="Ime">Joshua Van</td>
+                                    <td data-label="Rekord">16-2-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('van')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">1</td>
+                                    <td data-label="Ime">Alexandre Pantoja</td>
+                                    <td data-label="Rekord">30-6-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('pantoja')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">2</td>
+                                    <td data-label="Ime">Manel Kape</td>
+                                    <td data-label="Rekord">22-7-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('kape')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">3</td>
+                                    <td data-label="Ime">Tatsuro Taira</td>
+                                    <td data-label="Rekord">18-1-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('taira')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">4</td>
+                                    <td data-label="Ime">Brandon Royval</td>
+                                    <td data-label="Rekord">17-9-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('royval')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">5</td>
+                                    <td data-label="Ime">Brandon Moreno</td>
+                                    <td data-label="Rekord">23-8-2</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('moreno')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">6</td>
+                                    <td data-label="Ime">Amir Albazi</td>
+                                    <td data-label="Rekord">17-2-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('albazi')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">7</td>
+                                    <td data-label="Ime">Asu Almabayev</td>
+                                    <td data-label="Rekord">23-3-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('almabayev')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">8</td>
+                                    <td data-label="Ime">Kyoji Horiguchi</td>
+                                    <td data-label="Rekord">35-5-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('horiguchi')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">9</td>
+                                    <td data-label="Ime">Tim Elliott</td>
+                                    <td data-label="Rekord">22-13-1</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('elliott')">Prikaži</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Rang">10</td>
+                                    <td data-label="Ime">Steve Erceg</td>
+                                    <td data-label="Rekord">13-4-0</td>
+                                    <td data-label="Info">
+                                        <button class="view-fighter" onclick="showFighter('erceg')">Prikaži</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Na vrh">↑</button>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/fighters.js"></script>
+</body>
+</html>
